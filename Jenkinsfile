@@ -4,7 +4,6 @@ pipeline {
     tools {
         // Use the configured Maven version named "Maven" in Jenkins
         maven "Maven"
-        docker "Docker"
     }
     environment {
         DOCKER_CREDENTIALS = 'dockerhubpat'      
