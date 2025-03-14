@@ -7,8 +7,7 @@ pipeline {
         docker "Docker"
     }
     environment {
-        DOCKER_CREDENTIALS = 'dockerhubpat'  
-        GITHUB_CREDENTIALS = 'GithubPAT'     
+        DOCKER_CREDENTIALS = 'dockerhubpat'      
         DOCKER_IMAGE = 'vdnnguyen94/my-maven-web-app'  
         DOCKER_TAG = 'latest'
     }
