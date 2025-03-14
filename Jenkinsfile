@@ -46,6 +46,14 @@ pipeline {
                 }
             }
         }
+        // push images
+        stage('Docker Push') {
+            steps {
+                script {
+                    bat "docker push ${DOCKER_IMAGE}:${DOCKER_TAG}"
+                }
+            }
+        }
         stage('Test') {
             steps {
                 bat 'mvn test'
